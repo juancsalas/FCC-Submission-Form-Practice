@@ -13,32 +13,32 @@
 </head>
 <body>
 
-    <h1>freeCodeCamp Survey Form</h1>
-    <p>Thank you for taking the time to help us improve the platform</p>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
 
-    <form>
+    <form id="survey-form">
         <!-- Name -->
         <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+            <label id="name-label" for="name">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
         </div>
 
         <!-- Email -->
         <div class="form-group">
-            <label for="email">Password</label>
-            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+            <label id="email-label" for="email">Password</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
         </div>
 
         <!-- Age -->
         <div class="form-group">
-            <label for="age">Age (optional)</label>
-            <input type="number" class="form-control" id="age" placeholder="Age">
+            <label id="number-label" for="number">Age (optional)</label>
+            <input type="number" class="form-control" id="number" placeholder="Age" min="18" max="99">
         </div>
 
         <!-- Current Role (Drop Down) -->
         <div class="form-group">
             <label for="currentRole">Which option best describes your current role?</label>
-            <select class="form-control" id="currentRole">
+            <select class="form-control" id="dropdown">
                 <option disabled selected value>Select current role</option>
                 <option>Student</option>
                 <option>Full Time Job</option>
@@ -49,6 +49,12 @@
         </div>
 
         <!-- Radio Buttons -->
+        <div class="form-group">
+            <label for="recommend">Would you recommend freeCodeCamp to a friend?</label>
+                <input id="definitely" type="radio" name="recommend" value="definitely">Definitely
+                <input id="maybe" type="radio" name="recommend" value="maybe">Maybe
+                <input id="notSure" type="radio" name="recommend" value="notSure">Not Sure
+        </div>
 
 
         <!-- Favorite Feature Dropdown-->
@@ -109,7 +115,7 @@
         </div>
 
         <!-- Submit -->
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button id="submit" type="submit" class="btn btn-primary">Submit</button>
     </form>
     
 </body>
