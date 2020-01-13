@@ -50,10 +50,16 @@
 
         <!-- Radio Buttons -->
         <div class="form-group">
-            <label for="recommend">Would you recommend freeCodeCamp to a friend?</label>
-                <input id="definitely" type="radio" name="recommend" value="definitely">Definitely
-                <input id="maybe" type="radio" name="recommend" value="maybe">Maybe
-                <input id="notSure" type="radio" name="recommend" value="notSure">Not Sure
+            <p class="label" for="recommend">Would you recommend freeCodeCamp to a friend?</p>
+                <label>
+                    <input id="definitely" class="input-radio" type="radio" name="recommend" value="definitely">Definitely
+                </label>
+                <label>
+                    <input id="maybe" class="input-radio" type="radio" name="recommend" value="maybe">Maybe
+                </label>
+                <label>
+                    <input id="notSure" class="input-radio" type="radio" name="recommend" value="notSure">Not Sure
+                </label>
         </div>
 
 
@@ -70,8 +76,8 @@
         </div>
 
         <!-- Improved check boxes -->
-        <div class="form-group form-check">
-            <p>What would you like to see improved? (Check all that apply)</p>
+        <div class="form-group">
+            <p class="label">What would you like to see improved? (Check all that apply)</p>
             <label>
                 <input name="prefer" value="frontEndProjects" type="checkbox" class="input-checkbox"/>Front-end Projects
             </label>
@@ -108,7 +114,6 @@
         </div>
 
         <!-- Comments or suggesitons -->
-
         <div class="form-group">
             <label for="exampleFormControlTextarea1">Any comments or suggestions?</label>
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" placeholder="Enter your comment here..."></textarea>
